@@ -12,9 +12,11 @@ package card;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author srinivsi
+ * @modifier Jasmine Saini
+ *Student id- 991712194
  */
-public class Card {
-
+public class Card 
+{
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
 
