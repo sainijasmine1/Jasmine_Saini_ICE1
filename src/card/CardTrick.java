@@ -17,6 +17,9 @@ public class CardTrick {
             c.setSuit(Card.SUITS[random.nextInt(4)]); // Random suit from 0 to 3
             magicHand[i] = c;
         }
+        Card luckycard = new Card();
+        luckyCard.setValue(6); //Set the lucky card number
+        luckyCard.setSuit("hearts"); // Set the lucky card suit
         
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value of your card (1-13): ");
@@ -29,6 +32,7 @@ public class CardTrick {
         Card userCard = new Card();
         userCard.setValue(userValue);
         userCard.setSuit(userSuit);
+        
         
         boolean found = false;
         for (Card card : magicHand) {
